@@ -11,6 +11,18 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font Manrope links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome icons link -->
+    <script
+      src="https://kit.fontawesome.com/5244a2e973.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- tailwind and daisyUI custom styles -->
     <script>
       tailwind.config = {
@@ -23,18 +35,112 @@
         },
       };
     </script>
-    <!-- google font Manrope -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
-      rel="stylesheet"
-    />
+    <!-- font setup -->
     <style>
       .font-manrope {
         font-family: "Manrope", sans-serif;
       }
     </style>
   </head>
-  <body></body>
+  <body class="font-manrope">
+    <header class="container mx-auto">
+      <div class="hero">
+        <div class="hero-content flex-col lg:flex-row">
+          <div>
+            <h1 class="text-7xl font-extrabold">
+              It's good <br />
+              tea time at the <br />
+              Tea House !
+            </h1>
+            <p class="py-6">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo
+              facere officia delectus, eaque recusandae pariatur!
+            </p>
+            <button class="btn btn-primary">Explore More</button>
+          </div>
+          <div>
+            <img src="images/banner.png" class="max-w-sm" />
+            <!-- rating batch -->
+            <div
+              class="-mt-20 flex items-center gap-4 drop-shadow-lg bg-white p-2 w-[210px] rounded-lg"
+            >
+              <i class="fa-solid fa-star text-3xl text-amber-400"></i>
+              <div>
+                <h3 class="text-3xl">5.0</h3>
+                <p>Trust pilot Rating!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container mx-auto">
+      <!-- Featured section -->
+      <section class="text-center my-24">
+        <h2 class="text-5xl font-extrabold mb-5">Our Featured Products</h2>
+        <p class="lg:max-w-3xl mx-auto mb-10">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+          dolor sunt necessitatibus blanditiis explicabo ipsa sequi reiciendis,
+          rem dolore laboriosam ea cupiditate ad voluptates voluptas eligendi
+          animi iusto molestiae quidem.
+        </p>
+        <!-- Featured card container -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- first card -->
+          <div class="p-8 card bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]  shadow-xl">
+            <figure>
+              <img
+                src="images/tea-1.png"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body justify-center">
+              <h2 class="text-2xl font-bold">Milk Tea</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </div>
+          <!-- second card -->
+          <div class="p-8 card bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]  shadow-xl">
+            <figure>
+              <img
+                src="images/tea-2.png"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body justify-center">
+              <h2 class="text-2xl font-bold">Milk Tea</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </div>
+          <!-- third card -->
+          <div class="p-8 card bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]  shadow-xl">
+            <figure>
+              <img
+                src="images/tea-3.png"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body justify-center">
+              <h2 class="text-2xl font-bold">Milk Tea</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </div>
+          <!-- forth card -->
+          <div class="p-8 card bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]  shadow-xl">
+            <figure>
+              <img
+                src="images/tea-4.png"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body justify-center">
+              <h2 class="text-2xl font-bold">Milk Tea</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
